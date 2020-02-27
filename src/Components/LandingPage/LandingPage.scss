@@ -1,0 +1,23 @@
+.landing_page {
+  background-image: url('http://getwallpapers.com/wallpaper/full/f/0/6/157457.jpg');
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+
+  .landing_div {
+    margin-top: 25%;
+
+    h1, h2 {
+      color: red;
+    }
+
+    .enter_btn {
+      background-image: url('https://ya-webdesign.com/transparent250_/scroll-background-png-5.png');
+      background-repeat: no-repeat;
+      background-size: 200px, 200px;
+      // width: 10%;
+    }
+  }
+} 
