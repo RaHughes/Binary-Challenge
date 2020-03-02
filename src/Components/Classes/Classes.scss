@@ -1,0 +1,140 @@
+.class_info {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.barbarian {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://vignette.wikia.nocookie.net/blackbandos-homebrew/images/5/59/Path_of_the_wildman.jpg/revision/latest/scale-to-width-down/340?cb=20171102182239');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.bard {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://geekandsundry.com/wp-content/uploads/2017/05/Bard-Feature.png');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.cleric {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://geekandsundry.com/wp-content/uploads/2017/05/Cleric2-e1496370758420.jpg');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.druid {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSrcKGpcoxSDkXljJYMNM6_Gm4XAZ6rlorRkBrwkLAJg4srixwe');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.fighter {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://www.gamersdecide.com/sites/default/files/styles/news_images/public/article2class3.jpg');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.monk {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmu6Z_bgCvYsVH_LuHO6bo7mr_nPKUC8Y92dL6A9d37Wj-ZR0y');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.paladin {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://www.gametruth.com/wp-content/uploads/2019/04/paladinguide-2.jpg');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.ranger {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://2.bp.blogspot.com/-2darR9i_yjs/V9b3HhtMLzI/AAAAAAAAIDg/WVB62cXv04IY-3F2UOv7QRHSb0_LH93JQCLcB/s1600/quirion_ranger_by_benwootten-d47t2ml.jpg');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.rogue {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://dungeonsolvers.com/wp-content/uploads/2018/09/assassin_ver_2_0_by_giby_joseph-d8iv4yk.jpg');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.sorcerer {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://dnd5echaractersheet.us/wp-content/uploads/2019/01/Sorcerer-5E-guide.jpg');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.warlock {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://i2.wp.com/dmsworkshop.com/wp-content/uploads/2019/02/DD-Warlock-Feature-image.png?fit=970%2C545');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.wizard {
+  display: flex;
+  flex-direction: row;
+  img {
+    background-image: url('https://wizardofthetavern.com/wp-content/uploads/2019/10/abjuration-wizard-5e.jpg');
+    background-size: 100% 100%;
+    height: 200px;
+    width: 200px;
+  }
+}

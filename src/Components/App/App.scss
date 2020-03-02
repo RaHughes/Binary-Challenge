@@ -1,15 +1,21 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url('https://fonts.googleapis.com/css?family=Cinzel:700&display=swap');
+}
+
 .App {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  font-family: 'Cinzel', serif;
 }
 
 nav {
   display: flex;
   width: 500px;
   
-  p {
+  .nav_btn {
     margin: 5%;
   }
 }

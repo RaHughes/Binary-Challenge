@@ -3,17 +3,22 @@ import { connect } from 'react-redux';
 import './Monsters.scss'
 
 const Monsters = ({monsters}) => {
-  // console.log(monsters)
 
   const allMonsters = monsters.map(monster => {
     return ( 
-    <div>
-      <p>{monster.name}</p>
+    <div key={Math.random()}>
+      <h2>{monster.name}</h2>
+      <p><span>Size:</span> {monster.size}</p>
+      <p><span>Type:</span> {monster.type}</p>
+      <p><span>Alignment:</span> {monster.alignment}</p>
+      <p><span>Hit Points:</span> {monster.hit_points}</p>
+      <p><span>Hit Dice:</span> {monster.hit_dice}</p>
+      <p>Str:{monster.strength} Dex:{monster.dexterity} Con:{monster.consitution} Int:{monster.intelligence} Char:{monster.charisma}</p>
     </div> )
   })
 
   return (
-    <p>{allMonsters}</p>
+    <section>{allMonsters}</section>
   )
 }
 

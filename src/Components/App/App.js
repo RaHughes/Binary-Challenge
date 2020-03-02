@@ -6,6 +6,7 @@ import './App.scss';
 import Classes from '../Classes/Classes.js';
 import Spells from '../Spells/Spells.js';
 import Monsters from '../Monsters/Monsters.js';
+import CharacterSheets from '../CharacterSheets/CharacterSheets'
 import { fetchClasses, fetchSpells, fetchMonsters } from '../../Helpers/apiCalls';
 import { loadClasses, loadSpells, loadMonsters } from '../../Actions/index';
 
@@ -15,17 +16,18 @@ export class App extends Component {
     super();
     this.state = {
       classes: undefined,
-      spells: undefined
+      spells: undefined,
+      monsters: undefined
     }
   }
 
   componentDidMount() {
     fetchClasses()
-    .then(data => this.props.loadClasses(data.results))
+    .then(data => this.props.loadClasses(data))
     fetchSpells()
-    .then(data => this.props.loadSpells(data.results))
+    .then(data => this.props.loadSpells(data))
     fetchMonsters()
-    .then(data => this.props.loadMonsters(data.results))
+    .then(data => this.props.loadMonsters(data))
   }
 
   render() {
@@ -33,14 +35,15 @@ export class App extends Component {
     <main className="App">
       <h1>Welcome to DnD 5E Simple Resource!</h1>
         <nav>
-          <NavLink to='/classes' type='button'>Classes</NavLink>
-          <NavLink to='/spells' type='button'>Spells</NavLink>
-          <NavLink to='/monsters' type='button'> Monsters </NavLink>
-          <p>Character Sheets</p>
+          <NavLink className='nav_btn' to='/classes' type='button'>Classes</NavLink>
+          <NavLink className='nav_btn' to='/spells' type='button'>Spells</NavLink>
+          <NavLink className='nav_btn' to='/monsters' type='button'> Monsters </NavLink>
+          <NavLink className='nav_btn' to='/characters' type='button'>Character Sheets</NavLink>
       </nav>
       <Route exact path='/classes' component={Classes} />
       <Route exact path='/spells' component={Spells} />
       <Route exact path='/monsters' component={Monsters} />
+      <Route exact path='/characters' component={CharacterSheets} />
     </main>
   )}
 }
