@@ -12,3 +12,8 @@ export const loadMonsters = monsters => ({
   type: 'LOAD_MONSTERS',
   monsters
 })
+
+export const saveCharacter = character => ({
+  type: 'SAVE_CHARACTER',
+  character
+})

@@ -8,7 +8,7 @@ import Spells from '../Spells/Spells.js';
 import Monsters from '../Monsters/Monsters.js';
 import CharacterSheets from '../CharacterSheets/CharacterSheets'
 import { fetchClasses, fetchSpells, fetchMonsters } from '../../Helpers/apiCalls';
-import { loadClasses, loadSpells, loadMonsters } from '../../Actions/index';
+import { loadClasses, loadSpells, loadMonsters, saveCharacter } from '../../Actions/index';
 
 
 export class App extends Component {
@@ -17,7 +17,8 @@ export class App extends Component {
     this.state = {
       classes: undefined,
       spells: undefined,
-      monsters: undefined
+      monsters: undefined,
+      characters: undefined,
     }
   }
 
